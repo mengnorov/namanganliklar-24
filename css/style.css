@@ -61,6 +61,14 @@
    @font-face {
      font-family: 'Rubik';
      font-style: normal;
+     font-weight: 500;
+     font-display: swap;
+     src:url('../fonts/Rubik-Medium.woff2') format('woff2'), 
+          url('../fonts/Rubik-Medium.woff') format('woff'); 
+   }
+   @font-face {
+     font-family: 'Rubik';
+     font-style: normal;
      font-weight: 700;
      font-display: swap;
      src:url('../fonts/rubik-v20-latin-700.woff2') format('woff2'), 
@@ -115,7 +123,7 @@ body{
      box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
      border-radius: 5px;
 }
-
+/* EXCHANGE */
 .exchange-rates{
      display: flex;
      flex-wrap: wrap;
@@ -139,20 +147,41 @@ body{
      margin-right: 0;
 }
 .search-button{
-     padding: 8px;
+     padding: 0;
      border: none;
      border-radius: 5px;
      background-color: #fff;
+}
+.seach-button_wrapper{
+     padding: 8px;
+     display: flex;
+     align-items: center;
+
 }
 .site-header_seach-button{
      margin-right: 22px;
 
 }
+/* LANGUAGE_TOGGLER */
 .language-toggler{
      padding: 10px;
      border: none;
      border-radius: 5px;
      background-color: #fff;
+}
+.language-toggler_img{
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     margin-right: 5px;
+}
+.language-toggler_wrapper{
+     display: flex;
+     align-items: center; 
+}
+.language-toggler_text{
+     font-weight: 500;
+
 }
 .site-header_language_toggler{
      margin-right: 24px;
@@ -167,4 +196,10 @@ body{
      padding: 10px;
      text-decoration: none;
      color: #fff;
+}
+.telegram-sub:hover{
+     background-image:linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
+}
+.telegram-sub_img{
+     margin-right: 7px;
 }

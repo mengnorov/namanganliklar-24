@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&family=Nova+Square&family=Orbitron:wght@400;500;600&family=PT+Mono&family=Poppins:wght@500;600&family=Rubik:wght@500&display=swap" rel="stylesheet"> 
+    
+    
 </head>
 <body class="page_body">
 
 <header class="site_header">
    <div class="container">
         <div class="site-header_top">
-            <a class="logo" href="index.html">
+            <a class="site-header_logo logo" href="index.html">
                 <img class="logo_img" src="icon/logo.svg" alt="Namanganliklar24" width="303" height="33">
             </a>
         
@@ -38,11 +37,15 @@
             
             <div class="site-header_actions">
                 <button class="site-header_seach-button search-button" type="button">
-                    <img class="search-button_img" src="icon/icon-magnify.svg" alt="lupa" width="24" height="24">
+                   <span class="seach-button_wrapper">
+                        <img class="search-button_img" src="icon/icon-magnify.svg" alt="lupa" width="24" height="24">
+                   </span>
                 </button>
                 <button class="site-header_language_toggler language-toggler" type="button">
-                    <img class="language-toggler_img" src="icon//flag-ru.svg" alt="flag rus" width="20" height="20">
-                    <span class="language-toggler_text">РУ</span>
+                    <span class="language-toggler_wrapper">
+                        <img class="language-toggler_img" src="icon//flag-ru.svg" alt="flag rus" width="20" height="20">
+                        <span class="language-toggler_text">РУ</span>
+                    </span>
                 </button>
                 <a class="telegram-sub" href="https://t.me/frontend_dev1" target="_blank">
                     <img class="telegram-sub_img" src="icon//telegram-icon.png" alt="Telegram" width="20" height="20">
