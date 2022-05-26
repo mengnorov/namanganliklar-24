@@ -115,6 +115,7 @@ body{
      box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
      border-radius: 5px;
 }
+
 .exchange-rates{
      display: flex;
      flex-wrap: wrap;
@@ -122,8 +123,11 @@ body{
      padding: 0;
      list-style: none;
      align-items:center;
-     margin-left: 17px;
+    
      color: #7A7A7A
+}
+.site-header_exchange-rates{
+     margin-left: 17px;
 }
 .exchange-rates_item{
      margin-right: 26px;
@@ -139,15 +143,19 @@ body{
      border: none;
      border-radius: 5px;
      background-color: #fff;
+}
+.site-header_seach-button{
      margin-right: 22px;
+
 }
 .language-toggler{
      padding: 10px;
      border: none;
      border-radius: 5px;
      background-color: #fff;
+}
+.site-header_language_toggler{
      margin-right: 24px;
-     
 }
 .telegram-sub{
      display: flex;
