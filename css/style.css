@@ -91,7 +91,11 @@ body{
      line-height: 18px;
      color: #434343;
 }
-/* CONTAINER */
+*:focus{
+     outline: 0;
+     box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4)
+}
+/* CONTAINER */ 
 .container{
      max-width: 1240px;
      padding: 0 20px;
@@ -122,6 +126,12 @@ body{
      padding: 4px 8px;
      box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
      border-radius: 5px;
+}
+.logo:hover{
+     transform: scale(1.025);
+}
+.logo:focus{
+     box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4)
 }
 /* EXCHANGE */
 .exchange-rates{
@@ -183,6 +193,11 @@ body{
      font-weight: 500;
 
 }
+.search-button:hover,
+.language-toggler:hover{
+     box-shadow:  0 5px 8px rgba(34, 60, 80, 0.2);
+     transition: 0.3s ease;
+}
 .site-header_language_toggler{
      margin-right: 24px;
 }
@@ -199,6 +214,8 @@ body{
 }
 .telegram-sub:hover{
      background-image:linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
+     box-shadow:  0 5px 8px rgba(34, 60, 80, 0.2);
+     transition: 0.3s ease;
 }
 .telegram-sub_img{
      margin-right: 7px;
