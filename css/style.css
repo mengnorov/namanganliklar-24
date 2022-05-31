@@ -95,6 +95,10 @@ body{
      outline: 0;
      box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4)
 }
+img{
+     max-width: 100%;
+     height: auto;
+}
 /* CONTAINER */ 
 .container{
      max-width: 1240px;
@@ -228,9 +232,12 @@ body{
      border-radius: 5px;
      margin-bottom: 18px;
 }
+.sitenav_item{
+     margin: 5px 0;
+}
 .site-nav_list{
      margin: 0;
-     padding: 22px 24px;
+     padding: 17px 24px;
      list-style-type: none;
      display: flex;
      align-items: center;
@@ -254,4 +261,42 @@ body{
 /* TOP BANNER */
 .top-banner_link{
      display: flex;
+}
+
+/* MEDIA QUERIYES */
+@media (max-width:1000px){
+     .site-header{
+          padding-top: 20px;
+     }
+     .site-header_top{
+          align-items: stretch;
+     }
+     .sitenav_link{
+          font-size: 16px;
+     }
+     .exchange-rates{
+          order: -1;
+          width: 100%;
+          justify-content: center;
+     }
+}
+@media (max-width:850px){
+     .site-header_top{
+          margin-bottom: 20px;
+     }
+     .exchange-rates{
+       font-size: 14px;  
+       line-height: 17px;
+     }
+}
+@media (max-width:750px){
+     .exchange-rates{
+          display: none;
+     }
+     .sitenav{
+          margin-bottom: 0;
+     }
+     .top-banner{
+          display: none;
+     }
 }
