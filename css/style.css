@@ -328,8 +328,8 @@ img{
          box-shadow:0px 2px 6px rgba(202, 202, 202, 0.25);  
          transition: box-shadow 0.3s ease;   
      }
-     .sitenav---open .site-header_toggler{
-          
+     .site-header_toggler:focus{
+          box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4)  
      }
      .site-header_toggler:focus{
           box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4)
@@ -342,25 +342,25 @@ img{
      .exchange-rates,
      .search-button,
      .language-toggler,
-     .telegram-sub,
-     .sitenav{
+     .telegram-sub{
           display: none;
      }
      .sitenav{
-          margin-bottom: 0;
-          transform: translateX(120%);
-          transition: transform 0.3s ease;
-     }
-     .sitenav---open{
-          display: block;
           position: fixed;
           z-index: 15;
           top: 0;
           right: 0;
           bottom: 0;
           width: 65%;
+          margin-bottom: 0;
           border-radius: 0;
           box-shadow: -10px 0 15px rgba(202, 202, 202, 0.25);
+          transform: translateX(120%);
+          /* transition: transform 3s ease; */
+          animation: sitenav-slide-out 0.3s ease forwards;
+     }
+     .sitenav---open{
+          display: block;
           animation: sitenav-slide-in 0.3s ease forwards;
      }
      .site-nav_list{
@@ -392,6 +392,14 @@ img{
           display: none;
      }
 }
+@media (max-width:500px){
+     .logo_img{
+          width: 220px;
+     }
+     .sitenav{
+          width: 80%;
+     }
+}
 /* KEYFRAMES */
 @keyframes sitenav-slide-in {
      from {
@@ -399,5 +407,13 @@ img{
      }
      to   {
           transform: translateX(0);
+     }
+}
+@keyframes sitenav-slide-out {
+     from {
+          transform: translateX(0);
+     }
+     to   {
+          transform: translateX(120%);
      }
 }
