@@ -311,18 +311,25 @@ img{
           padding: 20px 0;
           width: 100%;
      }
-     
+
      .site-header_top{
           margin-bottom: 0;
      }
      .site-header_toggler{
+         position: relative;
+         z-index: 20;
          display: block;
          padding: 10px;
          border:none;
          background-color:#fff;
          border-radius:5px;
-         font-weight: 550;  
-        
+         font-weight: 550;   
+         cursor: pointer;
+         box-shadow:0px 2px 6px rgba(202, 202, 202, 0.25);  
+         transition: box-shadow 0.3s ease;   
+     }
+     .sitenav---open .site-header_toggler{
+          
      }
      .site-header_toggler:focus{
           box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4)
@@ -341,6 +348,8 @@ img{
      }
      .sitenav{
           margin-bottom: 0;
+          transform: translateX(120%);
+          transition: transform 0.3s ease;
      }
      .sitenav---open{
           display: block;
@@ -351,23 +360,28 @@ img{
           bottom: 0;
           width: 65%;
           border-radius: 0;
-          box-shadow: -10px 0 15px rgba(202, 202, 202, 0.25)
+          box-shadow: -10px 0 15px rgba(202, 202, 202, 0.25);
+          animation: sitenav-slide-in 0.3s ease forwards;
      }
-     .sitenav---open .site-nav_list{
+     .site-nav_list{
           flex-direction: column;
           align-items: flex-end;
           padding: 25px;
-          /* width: 100%; */
+          width: 100%;
+          padding-top: 100px;
      }
-     .sitenav---open .sitenav_item{
+     .sitenav_item{
           margin: 5px 0;
           width: 100%;
           text-align: right;
      }
-     .sitenav---open .sitenav_item:not(:last-child){
-          border-bottom: 1px solid #1E96C8;
+     .sitenav_item:last-child{
+          margin-right: 30px;
      }
-     .sitenav---open .sitenav_link{
+     .sitenav_item:not(:last-child){
+          border-bottom: 1px solid #515151;
+     }
+     .sitenav_link{
           padding: 10px;
           text-align: right;
      }
@@ -376,5 +390,14 @@ img{
      }
      .top-banner{
           display: none;
+     }
+}
+/* KEYFRAMES */
+@keyframes sitenav-slide-in {
+     from {
+          transform: translateX(120%);
+     }
+     to   {
+          transform: translateX(0);
      }
 }
