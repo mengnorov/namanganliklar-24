@@ -213,17 +213,28 @@ img{
 .telegram-sub{
      display: flex;
      align-items: center;
-     background-color: #1E96C8;
-     font-weight: 500;
-     background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+     font-weight: 550;
      border-radius: 5px;
      padding: 10px;
      text-decoration: none;
-     color: #fff;
 }
-.telegram-sub:hover{
+.telegram--dark{
+     background-color: #1E96C8;
+     background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+     color: #fff;
+
+}
+.telegram--dark:hover{
      background-image:linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
      box-shadow:  0 5px 8px rgba(34, 60, 80, 0.2);
+}
+.telegram--white{
+     background-color:#fff;
+     color: #295093;
+     width: 132px;
+     height: 38px;
+}
+.telegram-sub:hover{
      transition: 0.3s ease;
 }
 .telegram-sub_img{
@@ -266,7 +277,58 @@ img{
 .top-banner_link{
      display: flex;
 }
-
+/* SITE FOOTER */
+.site-footer{
+     background-color:#295093;
+     padding: 18px 0;
+     color:#fff;
+     font-size: 14px;
+     line-height: 17px;
+}
+.site-footer *:focus{
+     box-shadow:0 0 0 4px rgba(255, 255, 255, 0.4)
+}
+.site-footer_top{
+     display: flex;
+     align-items:center;
+     flex-wrap: wrap;
+}
+.site-footer_logo{
+     margin-right: auto;
+     background-color:#133C82;
+     border-radius: 5px;
+     padding: 10px;
+}
+.site-footer_nav{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+}
+.site-footer_nav-links{
+     list-style-type: none;
+     color:#fff;
+     display: inline-block;   
+     text-decoration: none;  
+}
+.site-footer_nav-item{
+     list-style-type: none;
+}
+.site-footer_sub-text{
+     margin: 0;
+     margin-right: 17px;
+}
+.site-footer_bottom{
+     display: flex;
+     flex-wrap: wrap;
+}
+.site-footer_about{
+     max-width: 365px;
+}
+.site-footer_heading{
+     font-size: 14px;
+     line-height: 17px;
+}
 /* MEDIA QUERIYES */
 @media (max-width:1000px){
      .site-header{
