@@ -291,32 +291,53 @@ img{
 .site-footer_top{
      display: flex;
      align-items:center;
-     flex-wrap: wrap;
+
 }
 .site-footer_logo{
      margin-right: auto;
      background-color:#133C82;
      border-radius: 5px;
      padding: 10px;
+     flex-shrink: 0;
 }
 .site-footer_nav{
      display: flex;
      flex-wrap: wrap;
      margin: 0;
      padding: 0;
+     max-width: 520px;
+}
+.site-footer_nav-item{
+     width: 50%;
+     margin-bottom: 10px;
+     list-style-type: none;
+     padding-right: 15px;
 }
 .site-footer_nav-links{
      list-style-type: none;
      color:#fff;
      display: inline-block;   
      text-decoration: none;  
+     font-weight: 550;
 }
-.site-footer_nav-item{
-     list-style-type: none;
+.site-footer_nav-links:hover{
+     text-decoration:underline;
 }
+
 .site-footer_sub-text{
      margin: 0;
      margin-right: 17px;
+     padding: 25px 25px;
+}
+.site-footer_telegram-white{
+     flex-shrink: 0;
+}
+.site-footer_divider{
+     background-color: #133C82;
+     border:none;
+     height: 3px;
+     margin-top: 18px;
+     margin-bottom: 12px;
 }
 .site-footer_bottom{
      display: flex;
@@ -324,12 +345,22 @@ img{
 }
 .site-footer_about{
      max-width: 365px;
+     margin-right: 111px;
 }
 .site-footer_heading{
      font-size: 14px;
      line-height: 17px;
+     margin-top: 0;
 }
 /* MEDIA QUERIYES */
+@media(max-width: 1060px){
+     .site-footer_about,
+     .site-footer_nav{
+          max-width: 50%;
+          margin-right: 0;
+          padding-right: 30px;
+     }     
+}
 @media (max-width:1000px){
      .site-header{
           padding-top: 20px;
@@ -361,6 +392,17 @@ img{
      .sitenav{
           font-size: 14px;
           line-height: 17px;
+     }
+     .site-footer_about,
+     .site-footer_nav{
+          min-width: 100%;
+     }
+     .site-footer_about{
+          order: 1;
+     }
+     .site-footer_nav{
+          margin-bottom: 20px;
+
      }
 }
 @media (max-width:750px){
@@ -404,7 +446,7 @@ img{
      .exchange-rates,
      .search-button,
      .language-toggler,
-     .telegram-sub{
+     .site-header_telegram-sub {
           display: none;
      }
      .sitenav{
@@ -453,6 +495,18 @@ img{
      .top-banner{
           display: none;
      }
+     .site-footer_top{
+          flex-wrap: wrap;
+          align-items:stretch;
+     }
+     .site-footer_sub-text{
+          order: 1;
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+          text-align: right;
+          margin-right: 0;
+     }
 }
 @media (max-width:500px){
      .logo_img{
@@ -460,6 +514,20 @@ img{
      }
      .sitenav{
           width: 80%;
+     }
+     .site-footer_top{
+          flex-direction: column;
+          align-items:center;
+     }
+     .site-footer_logo{
+          margin-right: 0;
+     }
+     .site-footer_sub-text{
+          order: 0;
+          margin-bottom: 15px;
+     }
+     .site-footer_nav-item{
+          width: 100%;  
      }
 }
 /* KEYFRAMES */
