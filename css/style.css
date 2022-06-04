@@ -85,6 +85,8 @@ html{
      box-sizing: inherit;
 }
 body{
+     display: flex;
+     flex-direction: column;
      height: 100%;
      font-family: 'Roboto', 'Arial', sans-serif;
      font-size: 15px;
@@ -276,6 +278,10 @@ img{
 /* TOP BANNER */
 .top-banner_link{
      display: flex;
+}
+/* MAIN_CONTENT */
+.main-content{
+     flex-grow: 1;
 }
 /* SITE FOOTER */
 .site-footer{
