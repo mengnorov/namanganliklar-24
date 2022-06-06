@@ -282,7 +282,97 @@ img{
 /* MAIN_CONTENT */
 .main-content{
      flex-grow: 1;
+     padding-top: 22px;
+     padding-bottom: 38px;
 }
+/* COVID-INFO */
+.covid-info{
+     background: #F6F6F9;
+     border-radius: 5px;
+     padding: 30px 35px;
+     display: flex;
+     align-items:center;
+     color:#000;
+}
+.covid-info_heading{
+     max-width: 235px;
+     font-size: 20px;
+     line-height: 24px;
+     margin-right: 70px;
+     margin-top: 0;
+     margin-bottom: 0;
+     font-weight: 550;
+     color:#000;
+}
+.covid-info_stat{
+     flex-grow: 1;
+     display: flex;
+     flex-wrap: wrap;
+     border-left: 1px solid #F4CCD1;
+     padding-left: 28px;
+     padding-right: 28px;
+}
+.covid-info_stat::before{
+     content: '';
+     background-repeat: no-repeat;
+     background-position: center center;
+     width: 38px;
+     height: 40px;
+     margin-right: 18px;
+     align-items:center;
+}
+.covid-info::before{
+     content:'';
+     margin-right: 25px;
+     width: 45px;
+     height: 43px;
+     background:url("../img/icon-covid.svg");
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+.covid-info_stats-list{
+     display: flex;
+     flex-grow: 1;
+     align-items:center;
+     flex-wrap: wrap;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     margin-right: 42px;
+}
+.covid-info_stat-infected{
+     padding-top: 17px;
+     padding-bottom: 17px;
+     border-left-color: #EB5569;
+}
+.covid-info_stat-infected::before{
+     background-image:url(../img/icon-infected.svg);
+}
+.covid-info_stat-recovered::before{
+     background-image:url(../img/icon-recovered.svg);
+}
+.covid-info_stat-dead::before{
+     background-image:url(../img/icon-dead.svg);
+}
+.covid-info_stat-title{
+     font-weight: 400;
+     margin-bottom: 5px;
+     margin: 0;
+     font-size: 18px;
+     line-height: 21px;
+}
+.covid-info_stat-value{
+     font-size: 25px;
+     line-height: 30px;
+     font-weight: 550;
+}
+.covid-info_title-red{
+     color: #DB0000;
+}
+.covid-info_title-green{
+     color: #05B135;;
+}
+
 /* SITE FOOTER */
 .site-footer{
      background-color:#295093;
