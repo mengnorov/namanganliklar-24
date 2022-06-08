@@ -293,6 +293,7 @@ img{
      display: flex;
      align-items:center;
      color:#000;
+     margin-bottom: 18px;
 }
 .covid-info_heading{
      max-width: 235px;
