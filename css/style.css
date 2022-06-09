@@ -384,6 +384,9 @@ img{
      color: #05B135;;
 }
 /* NEWS_GRID */
+.news-grid{
+     margin-bottom: 16px;
+}
 .news-grid_list{
      display: flex;
      flex-wrap: wrap;
@@ -408,6 +411,7 @@ img{
      margin-bottom: 11px;
      object-fit: cover;
      border-radius: 5px;
+     object-position: center top;
 }
 .news-grid_heading{
      font-weight: 550;
