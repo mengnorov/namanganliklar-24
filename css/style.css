@@ -433,6 +433,46 @@ img{
      right: 0;
      left: 0;
 }
+.notifications{
+     width: 1200px;
+     height: 91px;
+     border-radius: 5px;
+     background: rgba(239, 186, 84, 0.18);
+     display: flex;
+     align-items: center;
+     padding: 25px 35px;
+}
+.notifications_heading{
+     margin: 0;
+     margin-right: auto;
+     margin-left: 17px;
+     font-weight: 550;
+     line-height: 24;
+     font-size: 20px;
+     color:#000;
+}
+.notifications::before{
+     content:'';
+     width: 31px;
+     height: 35px;
+     background: url(../img/bell-icon.svg) no-repeat center center / contain; 
+     margin-left: 34px;
+}
+.notification_button{
+     width: 264px;
+     height: 42px;  
+     background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+     border-radius: 5px;
+     padding: 8px 12px;
+     border:none;
+     font-weight: 550;
+     font-size: 20px;
+     color:#fff;
+}
+.notification_button:hover{
+     background-image: linear-gradient(90deg, rgba(255, 139, 54, 0.9) 0% ,#FE5C28 88.43%);
+     cursor: pointer;
+}
 /* SITE FOOTER */
 .site-footer{
      background-color:#295093;
