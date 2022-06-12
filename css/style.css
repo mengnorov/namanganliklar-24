@@ -434,8 +434,7 @@ img{
      left: 0;
 }
 .notifications{
-     width: 1200px;
-     height: 91px;
+     width: 100%;
      border-radius: 5px;
      background: rgba(239, 186, 84, 0.18);
      display: flex;
@@ -447,7 +446,7 @@ img{
      margin-right: auto;
      margin-left: 17px;
      font-weight: 550;
-     line-height: 24;
+     line-height: 24px;
      font-size: 20px;
      color:#000;
 }
@@ -468,10 +467,15 @@ img{
      font-weight: 550;
      font-size: 20px;
      color:#fff;
+     white-space: nowrap;
+     margin-left: 1px;
 }
 .notification_button:hover{
      background-image: linear-gradient(90deg, rgba(255, 139, 54, 0.9) 0% ,#FE5C28 88.43%);
      cursor: pointer;
+}
+.notification_button:focus{
+     box-shadow: 0 0 3px 4px #EB5569;
 }
 /* SITE FOOTER */
 .site-footer{
@@ -618,6 +622,9 @@ img{
           font-size: 14px;
           line-height: 17px;
      }
+     .notifications{
+          font-size: 16px;
+     }
      .site-footer_about,
      .site-footer_nav{
           min-width: 100%;
@@ -628,6 +635,20 @@ img{
      .site-footer_nav{
           margin-bottom: 20px;
 
+     }
+     .notifications{
+          padding: 20px;
+     }
+     .notifications_heading{
+          margin-left: 0;
+     }
+     .notification_button,
+     .notifications_heading{
+          font-size: 16px;
+          line-height: 20px;
+     }
+     .notifications::before{
+          display: none;
      }
 }
 @media (max-width:750px){
@@ -747,6 +768,20 @@ img{
           margin-right: 0;
      }
 }
+@media (max-width:650px){
+     .notifications{
+          flex-wrap: wrap;
+     }
+     .notifications_heading{
+          width: 100%;
+          margin-bottom: 15px;
+          text-align: center;
+     }
+     .notification_button{
+          width: 100%;
+          text-align: center;
+     }
+}
 @media (max-width:550px){
      .covid-info::before{
           margin-right: 0;
@@ -779,6 +814,10 @@ img{
      .site-footer_sub-text{
           order: 0;
           margin-bottom: 15px;
+     }.notification_button,
+     .notifications_heading{
+          font-size: 15px;
+          line-height: 17px;
      }
      .site-footer_nav-item{
           width: 100%;  
