@@ -984,8 +984,9 @@ img{
           border-bottom: 1px solid #515151;
      }
      .sitenav_link{
-          padding: 10px;
           text-align: right;
+          width: 100%;
+          padding-left: 50%;
      }
      .sitenav---open .sitenav_link:active{
           background-color:#1E96C8;
