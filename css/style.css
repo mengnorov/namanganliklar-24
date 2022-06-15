@@ -703,6 +703,38 @@ img{
      line-height: 17px;
      margin-top: 0;
 }
+/* SITE_APP */
+.site-app{
+     background:#F6F6F9 url(../img/Group\ 1.png) no-repeat 20px bottom;
+     border-radius:5px;
+     padding: 65px 20px 65px 245px;
+     display: flex;
+     align-items:center;
+     margin: 20px 0;
+}
+.site-app_body{
+     width: 530px;
+}
+.site-app_heading{
+     margin-top: 0;
+     margin-bottom: 10px;
+     font-size: 24px;
+     line-height: 28px;
+     font-weight: 550;
+     color:#295093; 
+}
+.site-app_text{
+     color:#333;
+     font-weight: 550;
+     font-size: 18px;
+     line-height: 21px;
+     margin-right: auto;
+}
+.site-app_link{
+     margin-left: 20px;
+     border-radius: 5px;
+     display: flex;
+}
 /* MEDIA QUERIYES */
 @media(max-width:1240px){
 
@@ -746,6 +778,18 @@ img{
      .covid-info_stat-infected{
           padding-top: 0;
           padding-bottom: 0;
+     }
+     .site-app{
+          flex-wrap: wrap;
+          padding-top: 40px;
+          padding-bottom: 40px;
+     }
+     .site-app_body{
+          width: 100%;
+     }
+     .site-app_link{
+          margin-left: 0;
+          margin-right: 20px;
      }
 }
 @media(max-width: 1060px){
@@ -797,6 +841,13 @@ img{
      .popular-news_banner{
           width: 100%;
      }
+     .news-list{
+          margin-bottom: 40px;
+     }
+     .sidebar-banner_img{
+          width: 100%;
+          height: auto;
+     }
 }
 @media (max-width:850px){
      .site-header_top{
@@ -837,6 +888,17 @@ img{
      }
      .notifications::before{
           display: none;
+     }
+     .site-app{
+          background-size: 160px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+     }
+     .site-app_heading{
+          font-size: 20px;
+     }
+     .site-app_text{
+          font-size: 16px;
      }
 }
 @media (max-width:750px){
@@ -945,6 +1007,10 @@ img{
      .covid-info_stat:not(:last-child){
           border-bottom:2px solid #F4CCD1
      }
+     .site-app{
+          padding: 30px;
+          background-image:none;
+     }
      .site-footer_top{
           flex-wrap: wrap;
           align-items:stretch;
@@ -958,6 +1024,8 @@ img{
           margin-right: 0;
      }
 }
+
+
 @media (max-width:650px){
      .notifications{
           flex-wrap: wrap;
@@ -981,10 +1049,7 @@ img{
      .news-list_item{
           margin-bottom: 35px;
      }
-     .sidebar-banner_img{
-          width: 100%;
-          height: auto;
-     }
+   
 }
 @media (max-width:550px){
      .covid-info::before{
@@ -1026,6 +1091,18 @@ img{
      }
      .site-footer_nav-item{
           width: 100%;  
+     }
+}
+@media (max-width:470px){
+     .site-app{
+          justify-content: space-around;
+     }
+     .site-app_link{
+          margin: 0;
+          min-width: 45%;
+     }
+     .site-app_img{
+          width: 120px;
      }
 }
 /* KEYFRAMES */
